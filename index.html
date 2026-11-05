@@ -4,11 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Cap10works | Adnan’s IT Portfolio</title>
+<meta name="description" content="Adnan, an IT student from India learning web development and cybersecurity. Projects, learning journey and contact details.">
+<meta name="theme-color" content="#060708">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Adnan | IT Student Portfolio">
+<meta property="og:description" content="IT student learning web development and cybersecurity. Open to remote internships and entry-level roles.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🛡️%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Share+Tech+Mono&display=swap">
 <style>
-:root{--bg:#02060a;--ink:#cfeee0;--mute:#6f9a8a;--card:rgba(4,18,15,.8);--line:#0d3b30;--g:#00ff9c;--c:#00e5ff;--r:#ff3860;
+:root{--bg:#060708;--ink:#e9ecef;--mute:#8b949e;--card:rgba(14,16,20,.78);--line:#2b3038;--g:#ff4a1c;--c:#5ab8ff;--r:#e11d2e;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;background:var(--bg)}
+html{scroll-padding-top:calc(64px + env(safe-area-inset-top,0px));scroll-behavior:smooth;background:var(--bg)}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Share Tech Mono",ui-monospace,Menlo,monospace;overflow-x:hidden}
 #rain{position:fixed;inset:0;width:100%;height:100%;opacity:.22;z-index:0;pointer-events:none}
@@ -18,35 +24,33 @@ a{color:var(--c)}
 :focus-visible{outline:3px solid var(--r);outline-offset:3px}
 .hero{position:relative;z-index:1;height:100vh;height:100svh;min-height:560px;overflow:hidden}
 #c{position:absolute;inset:0;width:100%;height:100%}
-.hud{position:absolute;left:0;right:0;top:calc(14px + env(safe-area-inset-top,0px));display:flex;justify-content:space-between;padding:0 clamp(16px,4vw,48px);font-size:13px;color:var(--mute);letter-spacing:.12em}
-.hud b{color:var(--g);font-weight:400}
 .intro{position:absolute;left:0;right:0;bottom:0;padding:0 clamp(20px,5vw,64px) clamp(24px,6vh,52px);background:linear-gradient(to top,var(--bg) 40%,transparent)}
-#term{white-space:pre-wrap;color:var(--g);font-size:clamp(13px,1.9vw,16px);min-height:5.2em;margin:0 0 12px;text-shadow:0 0 8px rgba(0,255,156,.5)}
+#term{white-space:pre-wrap;color:var(--g);font-size:clamp(13px,1.9vw,16px);min-height:5.2em;margin:0 0 12px;text-shadow:0 0 8px rgba(255,74,28,.5)}
 #term::after{content:"█";animation:blink 1s steps(2) infinite}
 @keyframes blink{50%{opacity:0}}
-.intro h1{font-size:clamp(34px,7.5vw,92px);font-weight:900;color:#eafff6;text-shadow:2px 0 var(--r),-2px 0 var(--c);animation:glitch 4.5s infinite}
+.intro h1{font-size:clamp(34px,7.5vw,92px);font-weight:900;color:#ffffff;text-shadow:2px 0 var(--r),-2px 0 var(--c);animation:glitch 4.5s infinite}
 @keyframes glitch{0%,91%,100%{text-shadow:2px 0 var(--r),-2px 0 var(--c);transform:none}93%{text-shadow:-6px 0 var(--r),6px 0 var(--c);transform:translateX(3px)}96%{text-shadow:6px 0 var(--r),-6px 0 var(--c);transform:translateX(-3px)}}
 #tag{margin:12px 0 18px;max-width:50ch;color:var(--mute);font-size:clamp(14px,2vw,18px)}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:12px 24px;border:1px solid var(--g);color:#02060a;background:var(--g);text-decoration:none;font-weight:700;letter-spacing:.06em;box-shadow:0 0 22px rgba(0,255,156,.55);clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))}
+.btn{display:inline-block;padding:12px 24px;border:1px solid var(--g);color:#060708;background:var(--g);text-decoration:none;font-weight:700;letter-spacing:.06em;box-shadow:0 0 22px rgba(255,74,28,.55);clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))}
 .btn.ghost{background:transparent;color:var(--g);box-shadow:none}
 main{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:56px clamp(20px,5vw,40px) 30px}
 section{padding:36px 0;border-top:1px solid var(--line)}
-h2{font-size:clamp(22px,4.2vw,34px);font-weight:900;margin-bottom:18px;color:var(--g);text-shadow:0 0 14px rgba(0,255,156,.45)}
+h2{font-size:clamp(22px,4.2vw,34px);font-weight:900;margin-bottom:18px;color:var(--g);text-shadow:0 0 14px rgba(255,74,28,.45)}
 h2::before{content:"root@adnan:~$ ";color:var(--mute);font:400 .5em "Share Tech Mono",monospace;vertical-align:middle}
 .about{max-width:62ch}
 .chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
 .chips li{background:var(--card);border:1px solid var(--line);padding:7px 14px}
-.chips li:nth-child(3n+1){border-color:var(--g);box-shadow:0 0 10px rgba(0,255,156,.2)}
-.chips li:nth-child(3n+2){border-color:var(--c);box-shadow:0 0 10px rgba(0,229,255,.2)}
-.chips li:nth-child(3n){border-color:var(--r);box-shadow:0 0 10px rgba(255,56,96,.2)}
+.chips li:nth-child(3n+1){border-color:var(--g);box-shadow:0 0 10px rgba(255,74,28,.2)}
+.chips li:nth-child(3n+2){border-color:var(--c);box-shadow:0 0 10px rgba(90,184,255,.2)}
+.chips li:nth-child(3n){border-color:var(--r);box-shadow:0 0 10px rgba(225,29,46,.2)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px}
 .card{position:relative;display:block;background:var(--card);border:1px solid var(--line);padding:22px;text-decoration:none;color:inherit;transition:box-shadow .2s,border-color .2s,transform .12s;transform-style:preserve-3d}
 .card::before,.card::after{content:"";position:absolute;width:16px;height:16px;border:2px solid var(--g)}
 .card::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
 .card::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
-.card:hover{border-color:var(--g);box-shadow:0 0 28px rgba(0,255,156,.35)}
-.card h3{font-size:19px;margin-bottom:8px;color:#eafff6}
+.card:hover{border-color:var(--g);box-shadow:0 0 28px rgba(255,74,28,.35)}
+.card h3{font-size:19px;margin-bottom:8px;color:#ffffff}
 .card p{margin:0 0 12px;color:var(--mute);font-size:15px}
 .card small{color:var(--c)}
 .tag{position:absolute;top:10px;right:12px;font-size:11px;color:var(--g)}
@@ -54,15 +58,68 @@ h2::before{content:"root@adnan:~$ ";color:var(--mute);font:400 .5em "Share Tech 
 footer{position:relative;z-index:1;padding:26px 20px 50px;text-align:center;color:var(--mute);font-size:13px}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
 .rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.intro h1,#term::after{animation:none}.rv{opacity:1;transform:none;transition:none}#rain{display:none}}
+nav{position:fixed;top:0;left:0;right:0;z-index:70;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:calc(10px + env(safe-area-inset-top,0px)) clamp(14px,4vw,40px) 10px;background:rgba(6,7,8,.75);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .brand{font:900 15px Orbitron,sans-serif;color:var(--g);text-decoration:none;white-space:nowrap}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+nav ul a{color:var(--mute);text-decoration:none;font-size:14px;white-space:nowrap}
+nav ul a:hover{color:var(--g)}
+.open{font-size:12px;color:var(--g);white-space:nowrap}
+.open::before{content:"● ";animation:blink 1.6s steps(2) infinite}
+@media (max-width:760px){.open{display:none}}
+.win{background:var(--card);border:1px solid var(--line)}
+.win-bar{display:flex;align-items:center;gap:7px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:13px;color:var(--mute)}
+.win-bar i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.win-bar i:nth-child(1){background:#ff5f57}.win-bar i:nth-child(2){background:#febc2e}.win-bar i:nth-child(3){background:#28c840}
+.win-bar span{margin-left:8px}
+.win-body{padding:18px 20px}
+.win-body p{margin:0}.win-body .about{margin-bottom:14px}
+#openfor{color:var(--g);font-size:14px}
+.win pre{margin:0;white-space:pre-wrap;word-break:break-word;font:inherit;font-size:14px;color:var(--ink);overflow-x:auto}
+.win pre .p{color:var(--g)}.win pre .m{color:var(--mute)}
+.skillgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.sk{background:var(--card);border:1px solid var(--line);padding:16px}
+.sk h3{font-size:14px;color:var(--c);margin-bottom:12px;letter-spacing:.05em}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+.tl li{position:relative;margin:0 0 22px;padding-left:16px}
+.tl li::before{content:"";position:absolute;left:-31px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--mute)}
+.tl li.done::before{background:var(--g);border-color:var(--g);box-shadow:0 0 10px var(--g)}
+.tl li.now::before{border-color:var(--c);box-shadow:0 0 10px var(--c);animation:blink 1.4s steps(2) infinite}
+.tl b{color:#ffffff;display:block;font-weight:400}
+.tl span{color:var(--mute);font-size:14px}
+.tl em{font-style:normal;font-size:11px;letter-spacing:.1em;margin-left:10px;color:var(--mute)}
+.tl li.done em{color:var(--g)}.tl li.now em{color:var(--c)}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.edu div{background:var(--card);border:1px solid var(--line);padding:16px}
+.edu b{color:#ffffff;font-weight:400;display:block}.edu span{display:block;color:var(--mute);font-size:14px;margin-top:4px}
+#contact .cta{margin-bottom:6px}
+body{background:radial-gradient(ellipse 60% 40% at 15% 0%,rgba(225,29,46,.2),transparent 60%),radial-gradient(ellipse 50% 40% at 95% 25%,rgba(255,74,28,.16),transparent 60%),var(--bg);background-attachment:fixed}
+.aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.aurora::before,.aurora::after{content:"";position:absolute;width:60vmax;height:60vmax;border-radius:50%}
+.aurora::before{left:-15vmax;top:-10vmax;background:radial-gradient(circle,rgba(225,29,46,.3),transparent 65%);animation:drift 18s ease-in-out infinite alternate}
+.aurora::after{right:-20vmax;top:30vh;background:radial-gradient(circle,rgba(255,74,28,.24),transparent 65%);animation:drift 22s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translate(6vmax,5vmax)}}
+#rain{opacity:.16}
+h2{width:fit-content;background:linear-gradient(90deg,#ffb300,var(--g),var(--r));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:none}
+h2::before{-webkit-text-fill-color:var(--mute)}
+.btn{background:linear-gradient(90deg,#ffb300,var(--g),var(--r));border:0;color:#060708;box-shadow:0 0 22px rgba(255,74,28,.5),0 0 34px rgba(225,29,46,.35)}
+.btn.ghost{background:transparent;color:var(--g);border:1px solid var(--g);box-shadow:none}
+.card{background:rgba(14,16,20,.7);border-color:#3a414b}
+.card,.sk,.win,.edu div{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.card::before,.card::after{border-color:var(--r)}
+.card:hover{border-color:var(--r);box-shadow:0 0 30px rgba(225,29,46,.45),0 0 50px rgba(255,74,28,.2)}
+nav::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:var(--sp,0%);background:linear-gradient(90deg,#ffb300,var(--g),var(--r));box-shadow:0 0 10px var(--r)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.intro h1,#term::after{animation:none}.rv{opacity:1;transform:none;transition:none}#rain{display:none}.aurora::before,.aurora::after{animation:none}}
 </style>
 </head>
 <body>
+<div class="aurora" aria-hidden="true"></div>
 <canvas id="rain" aria-hidden="true"></canvas>
-<header class="hero">
+<nav><a class="brand" href="#top">ADNAN//</a>
+  <ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#journey">Journey</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul>
+  <span class="open">OPEN TO WORK</span></nav>
+<header class="hero" id="top">
   <canvas id="c" aria-hidden="true"></canvas>
-  <div class="hud"><span>SYS://ADNAN</span><span><b>●</b> SECURE CONNECTION</span></div>
-  <div class="intro">
+    <div class="intro">
     <p id="term"></p>
     <h1>Hi, I’m Adnan.</h1>
     <p id="tag"></p>
@@ -70,10 +127,19 @@ footer{position:relative;z-index:1;padding:26px 20px 50px;text-align:center;colo
   </div>
 </header>
 <main>
-  <section><h2>About</h2><p class="about" id="about"></p></section>
-  <section><h2>Skills</h2><ul class="chips" id="skills"></ul></section>
+  <section id="about"><h2>About</h2>
+    <div class="win"><div class="win-bar"><i></i><i></i><i></i><span>about.txt</span></div>
+    <div class="win-body"><p class="about" id="about-text"></p><p id="openfor"></p></div></div></section>
+  <section id="skills"><h2>Skills</h2><div class="skillgrid" id="skillgrid"></div></section>
+  <section id="journey"><h2>Learning Journey</h2><ul class="tl" id="tl"></ul></section>
   <section id="projects"><h2>Projects</h2><div class="grid" id="proj"></div></section>
-  <section id="contact"><h2>Contact</h2><a class="btn" id="mail" href="#">EMAIL ME</a><ul class="links" id="links"></ul></section>
+  <section id="lab"><h2>Lab Notes</h2>
+    <div class="win"><div class="win-bar"><i></i><i></i><i></i><span>terminal: my practice on my own Mac</span></div>
+    <div class="win-body"><pre id="labpre"></pre></div></div></section>
+  <section id="education"><h2>Education</h2><div class="edu" id="edu"></div></section>
+  <section id="contact"><h2>Contact</h2>
+    <div class="cta"><a class="btn" id="mail" href="#">EMAIL ME</a><a class="btn ghost" href="Adnan_CV.pdf" download>DOWNLOAD CV</a></div>
+    <ul class="links" id="links"></ul></section>
 </main>
 <footer>// adnan © 2026 // connection secure</footer>
 
@@ -81,26 +147,47 @@ footer{position:relative;z-index:1;padding:26px 20px 50px;text-align:center;colo
 <script>
 /* ===== EDIT YOUR DETAILS HERE ===== */
 var ME={
-  tagline:"IT student from India, 5th semester. Learning web development and open to remote work, internships and entry-level roles.",
-  about:"I’m an IT student who learns by building. Right now I’m learning HTML, CSS, JavaScript, Python and SQL, and I put every project on GitHub. I’m looking for a team where I can contribute, learn fast and take real responsibility. Give me a task and I’ll ship it.",
-  skills:["HTML & CSS (learning)","JavaScript (learning)","Python (learning)","SQL (learning)","Git & GitHub","Microsoft Office","Google Workspace","Quick learner"],
+  tagline:"IT student from India, 5th semester. Learning web development and cybersecurity, and open to remote work, internships and entry-level roles.",
+  about:"I’m an IT student who learns by building and practising. I’m learning web development and cybersecurity fundamentals, and I put every project on GitHub. I’m looking for a team where I can contribute, learn fast and take real responsibility. Give me a task and I’ll ship it.",
+  openfor:"open_to: remote internships | IT support | junior QA | entry-level web roles",
+  skills:[
+    {g:"WEB",i:["HTML & CSS (learning)","JavaScript (learning)","Git & GitHub"]},
+    {g:"SECURITY (LEARNING)",i:["Networking basics","TryHackMe intro rooms","Terminal: ping, nslookup, curl"]},
+    {g:"PROGRAMMING",i:["Python (learning)","SQL (learning)"]},
+    {g:"TOOLS & SOFT SKILLS",i:["macOS","Microsoft Office","Google Workspace","Quick learner","Clear written communication"]}
+  ],
+  journey:[
+    {s:"done",t:"Built my first webpage",d:"HTML and CSS, hosted on GitHub."},
+    {s:"done",t:"Built a JavaScript to-do app",d:"Add and remove tasks, saved in the browser."},
+    {s:"done",t:"Published this portfolio",d:"Interactive 3D site on GitHub Pages."},
+    {s:"done",t:"Cybersecurity intro on TryHackMe",d:"Completed the beginner intro rooms on offensive and defensive security."},
+    {s:"now",t:"Networking fundamentals",d:"IP addresses, DNS, ports and HTTP, practised with ping, nslookup and curl."},
+    {s:"next",t:"Linux fundamentals",d:"Command line skills that every security role needs."},
+    {s:"next",t:"Python and SQL",d:"Scripting and databases."},
+    {s:"next",t:"Web security",d:"Free PortSwigger Web Security Academy labs."}
+  ],
+  lab:[["p","$ ping -c 4 google.com"],["o","4 packets transmitted, 4 received, 0.0% packet loss"],["o","round-trip min/avg/max = 53.5 / 62.2 / 77.8 ms"],["p","$ nslookup google.com"],["o","Name: google.com  Address: 192.178.177.113 (and 5 more)"],["p","$ curl -I https://example.com"],["o","HTTP/2 200"],["o","content-type: text/html; charset=utf-8"],["o","server: cloudflare"],["o","cf-cache-status: HIT"],["m","# notes: DNS turns names into IPs, HTTPS uses port 443, status 200 means OK"]],
+  edu:[{t:"Information Technology, G.D.C Baramulla",d:"2024 to 2027, currently in semester 5"},{t:"Class XII, JK Board",d:"J.E.T Higher Secondary School, Baramulla, 2023"},{t:"Languages",d:"Kashmiri, Urdu, English"}],
   email:"workforbadcaptain@gmail.com",
   links:[{l:"GitHub",u:"https://github.com/cap10works"},{l:"LinkedIn",u:"https://www.linkedin.com/in/adnan-bhat-0414b2332/"},{l:"workforbadcaptain@gmail.com",u:"mailto:workforbadcaptain@gmail.com"}],
   projects:[
-    {t:"This Portfolio",d:"The interactive 3D site you are looking at right now.",s:"HTML, CSS, JavaScript, Three.js",u:"https://github.com/cap10works/cap10works.github.io"},
+    {t:"This Portfolio",d:"The interactive 3D cyber-themed site you are looking at right now.",s:"HTML, CSS, JavaScript, Three.js",u:"https://github.com/cap10works/cap10works.github.io"},
     {t:"To-Do List App",d:"Add and remove tasks in the browser. Tasks stay saved after a refresh.",s:"HTML, CSS, JavaScript",u:"https://github.com/cap10works/todo-app"},
     {t:"My First Site",d:"My first webpage, built while learning HTML and CSS.",s:"HTML, CSS",u:"https://github.com/cap10works/my-first-site"}
   ]
 };
 /* ================================== */
 function $(i){return document.getElementById(i)}
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
 var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
-$("tag").textContent=ME.tagline;$("about").textContent=ME.about;$("mail").href="mailto:"+ME.email;
-ME.skills.forEach(function(s){var li=document.createElement("li");li.textContent=s;$("skills").appendChild(li)});
-ME.links.forEach(function(x){var li=document.createElement("li"),a=document.createElement("a");a.href=x.u;a.textContent=x.l;a.target="_blank";a.rel="noopener";li.appendChild(a);$("links").appendChild(li)});
-ME.projects.forEach(function(p,i){var a=document.createElement("a");a.className="card";a.href=p.u;a.target="_blank";a.rel="noopener";
- a.innerHTML='<span class="tag"></span><h3></h3><p></p><small></small>';
- a.children[0].textContent="[ 0"+(i+1)+" ]";a.children[1].textContent=p.t;a.children[2].textContent=p.d;a.children[3].textContent=p.s;$("proj").appendChild(a)});
+$("tag").textContent=ME.tagline;$("about-text").textContent=ME.about;$("openfor").textContent=ME.openfor;$("mail").href="mailto:"+ME.email;
+ME.skills.forEach(function(s){var d=el("div","sk"),ul=el("ul","chips");d.appendChild(el("h3","",s.g));s.i.forEach(function(x){ul.appendChild(el("li","",x))});d.appendChild(ul);$("skillgrid").appendChild(d)});
+ME.journey.forEach(function(j){var li=el("li",j.s),b=el("b","",j.t);b.appendChild(el("em","",j.s==="done"?"DONE":j.s==="now"?"IN PROGRESS":"NEXT"));li.appendChild(b);li.appendChild(el("span","",j.d));$("tl").appendChild(li)});
+ME.edu.forEach(function(e){var d=el("div");d.appendChild(el("b","",e.t));d.appendChild(el("span","",e.d));$("edu").appendChild(d)});
+ME.lab.forEach(function(r){$("labpre").appendChild(el("span",r[0],r[1]+"\n"))});
+ME.links.forEach(function(x){var li=el("li"),a=el("a","",x.l);a.href=x.u;a.target="_blank";a.rel="noopener";li.appendChild(a);$("links").appendChild(li)});
+ME.projects.forEach(function(p,i){var a=el("a","card");a.href=p.u;a.target="_blank";a.rel="noopener";
+ a.appendChild(el("span","tag","[ 0"+(i+1)+" ]"));a.appendChild(el("h3","",p.t));a.appendChild(el("p","",p.d));a.appendChild(el("small","",p.s));$("proj").appendChild(a)});
 
 /* terminal boot text */
 (function(){
@@ -120,10 +207,10 @@ ME.projects.forEach(function(p,i){var a=document.createElement("a");a.className=
  function size(){cv.width=innerWidth;cv.height=innerHeight;drops=[];for(var i=0;i<Math.ceil(cv.width/fs);i++)drops[i]=Math.random()*cv.height/fs}
  size();addEventListener("resize",size);
  setInterval(function(){
-  x.fillStyle="rgba(2,6,10,.1)";x.fillRect(0,0,cv.width,cv.height);
-  x.fillStyle="#00ff9c";x.font=fs+"px monospace";
+  x.fillStyle="rgba(6,7,8,.1)";x.fillRect(0,0,cv.width,cv.height);
+  x.fillStyle="#ff4a1c";x.font=fs+"px monospace";
   for(var i=0;i<drops.length;i++){
-   x.fillText(chars[(Math.random()*chars.length)|0],i*fs,drops[i]*fs);
+   x.fillStyle=i%4===0?"#5ab8ff":"#ff4a1c";x.fillText(chars[(Math.random()*chars.length)|0],i*fs,drops[i]*fs);
    if(drops[i]*fs>cv.height&&Math.random()>.975)drops[i]=0;
    drops[i]++;
   }
@@ -138,21 +225,35 @@ ME.projects.forEach(function(p,i){var a=document.createElement("a");a.className=
  var S=new THREE.Scene(),C=new THREE.PerspectiveCamera(50,1,.1,100);C.position.z=9;
  var G=new THREE.Group();S.add(G);
  var gg=new THREE.IcosahedronGeometry(2.2,2);
- var globe=new THREE.Mesh(gg,new THREE.MeshBasicMaterial({color:0x00ff9c,wireframe:true,transparent:true,opacity:.35}));
- var nodes=new THREE.Points(gg,new THREE.PointsMaterial({color:0x00e5ff,size:.07}));
- var core=new THREE.Mesh(new THREE.IcosahedronGeometry(1.05,1),new THREE.MeshBasicMaterial({color:0xff3860,wireframe:true,transparent:true,opacity:.55}));
+ var globe=new THREE.Mesh(gg,new THREE.MeshBasicMaterial({color:0xff4a1c,wireframe:true,transparent:true,opacity:.35}));
+ var nodes=new THREE.Points(gg,new THREE.PointsMaterial({color:0x5ab8ff,size:.07}));
+ var core=new THREE.Mesh(new THREE.IcosahedronGeometry(1.05,1),new THREE.MeshBasicMaterial({color:0xe11d2e,wireframe:true,transparent:true,opacity:.55}));
  G.add(globe,nodes,core);
  var rings=[];
  [[3.1,.3,0],[3.5,1.2,.6],[3.9,-.5,1.1]].forEach(function(p,i){
   var g=new THREE.Group(),r=p[0];
-  g.add(new THREE.Mesh(new THREE.TorusGeometry(r,.012,8,200),new THREE.MeshBasicMaterial({color:i==1?0xff3860:0x00e5ff,transparent:true,opacity:.7})));
+  g.add(new THREE.Mesh(new THREE.TorusGeometry(r,.012,8,200),new THREE.MeshBasicMaterial({color:[0x5ab8ff,0xe11d2e,0xff4a1c][i],transparent:true,opacity:.7})));
   var pk=new THREE.Mesh(new THREE.SphereGeometry(.09,12,12),new THREE.MeshBasicMaterial({color:0xffffff}));g.add(pk);
   g.rotation.x=p[1];g.rotation.y=p[2];G.add(g);rings.push({g:g,pk:pk,r:r,s:.6+i*.25,a:i*2});
  });
  var N=1800,pos=new Float32Array(N*3);
  for(var k=0;k<N;k++){var d=6+Math.random()*9,u=Math.random()*6.283,v=Math.acos(2*Math.random()-1);pos[k*3]=d*Math.sin(v)*Math.cos(u);pos[k*3+1]=d*Math.sin(v)*Math.sin(u);pos[k*3+2]=d*Math.cos(v)}
  var sg=new THREE.BufferGeometry();sg.setAttribute("position",new THREE.BufferAttribute(pos,3));
- var stars=new THREE.Points(sg,new THREE.PointsMaterial({color:0x7dffc8,size:.035,transparent:true,opacity:.8}));S.add(stars);
+ var stars=new THREE.Points(sg,new THREE.PointsMaterial({color:0xcfd8ff,size:.035,transparent:true,opacity:.8}));S.add(stars);
+ var cubes=[];
+ for(var q=0;q<18;q++){
+  var ed=new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(.3,.3,.3)),new THREE.LineBasicMaterial({color:[0xff4a1c,0x5ab8ff,0xe11d2e][q%3],transparent:true,opacity:.8}));
+  var dd=4.5+Math.random()*4,uu=Math.random()*6.283,vv=Math.acos(2*Math.random()-1);
+  ed.position.set(dd*Math.sin(vv)*Math.cos(uu),dd*Math.sin(vv)*Math.sin(uu)*.6,dd*Math.cos(vv)*.6);
+  ed.userData={sx:Math.random()*.02+.005,sy:Math.random()*.02+.005,ph:Math.random()*6.28};G.add(ed);cubes.push(ed);
+ }
+ var knot=new THREE.Mesh(new THREE.TorusKnotGeometry(.55,.14,120,12),new THREE.MeshBasicMaterial({color:0xe11d2e,wireframe:true,transparent:true,opacity:.6}));
+ knot.position.set(-4.6,2.3,-1);G.add(knot);
+ var scan=new THREE.Mesh(new THREE.RingGeometry(2.2,2.27,96),new THREE.MeshBasicMaterial({color:0xffb300,transparent:true,opacity:.9,side:THREE.DoubleSide}));
+ scan.rotation.x=Math.PI/2;G.add(scan);
+ var pulse=0,sc=0;
+ document.querySelector(".hero").addEventListener("pointerdown",function(){pulse=1});
+ addEventListener("scroll",function(){sc=Math.min(scrollY/innerHeight,1.2)},{passive:true});
  function size(){var w=cv.clientWidth,h=cv.clientHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();
   var wide=w>820;G.position.set(wide?2.6:0,wide?.2:1.6,0);G.scale.setScalar(wide?1:.75)}
  addEventListener("resize",size);size();
@@ -164,12 +265,18 @@ ME.projects.forEach(function(p,i){var a=document.createElement("a");a.className=
   core.rotation.y=-t*.7;core.rotation.z=t*.3;
   var s=1+Math.sin(t*3)*.02;core.scale.setScalar(s);
   rings.forEach(function(o){o.a+=reduce?0:.012*o.s;o.pk.position.set(Math.cos(o.a)*o.r,Math.sin(o.a)*o.r,0)});
-  stars.rotation.y=t*.03;stars.rotation.x=t*.015;
-  gy+=(mx*.5-gy)*.05;gx+=(my*.3-gx)*.05;G.rotation.y=gy;G.rotation.x=gx;
+  stars.rotation.y=t*.03+sc*.4;stars.rotation.x=t*.015;
+  gy+=(mx*.5-gy)*.05;gx+=(my*.3-gx)*.05;G.rotation.y=gy+sc*1.2;G.rotation.x=gx;C.position.z=9+sc*3;
+  cubes.forEach(function(o){if(!reduce){o.rotation.x+=o.userData.sx;o.rotation.y+=o.userData.sy;o.position.y+=Math.sin(t*1.5+o.userData.ph)*.004}});
+  knot.rotation.x=t*.5;knot.rotation.y=t*.3;
+  var sy=Math.sin(t*1.1)*2.1;scan.position.y=sy;var sr=Math.sqrt(Math.max(4.84-sy*sy,.01))/2.2;scan.scale.set(sr,sr,sr);
+  pulse*=.94;var ps=1+pulse*.25;globe.scale.setScalar(ps);nodes.scale.setScalar(ps);
   R.render(S,C);requestAnimationFrame(loop);
  })();
 })();
 
+/* scroll progress */
+addEventListener("scroll",function(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;h.style.setProperty("--sp",(m>0?h.scrollTop/m*100:0)+"%")},{passive:true});
 /* tilt cards + reveal on scroll */
 (function(){
  if(matchMedia("(hover:hover)").matches&&!reduce){
